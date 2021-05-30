@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Audio player HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/AudioPlayer.css">
+    <style>
+    body{
+      background-color: #003153;
+    }
+    #player{
+        max-width: 100%;
+        height: 400px;
+       
+    }
+    p{
+      position: relative;
+      margin-top: -20%;
+      margin-left: 65%;
+      z-index: 10;
+    }
+    h3{
+      position: relative;
+      margin-top: -25%;
+      margin-left: 16%;
+      z-index: 9;
+    }
+    h4{
+      position: relative;
+      margin-top: -25%;
+      text-align: center;
+      z-index: 11;
+    }
+   
+
+    </style>
+  </head>
+
+  <body>
+
+ 
+      
+     <div id='player'></div>
+     <!-- <p><img src="skachat-pesnyu-aman-zhu-moyo-iskusstvo-mp3_5fae6364d07e1.jpeg" width="350px" height="350px" alt="Письма мастера дзен"></p>
+     <h3><img src="artworks-IGGSXiHOFHP0JpEf-YUOpiw-t500x500.jpg" width="350px" height="350px" alt="Письма мастера дзен"></h3>
+     <h4><img src="maxresdefault.jpg"width="50%" height="50%" alt="Письма мастера дзен"></h4> -->
+     <form action="menu.html">
+      <button type="submit" style ="background: rgb(128, 0, 60); 
+      width: 230px; 
+      height: 45px; 
+      border-radius: 40px;
+      padding: 0px 0; 
+      position: relative;
+      margin-top: 7.15%;
+      margin-right: 40%;
+      z-index: 99999; ">Вернуться в меню</button>
+    </form>
+  
+    <script src="js/AudioPlayer.js"></script>
+
+    <script>
+       
+        var iconImage = null;
+
+        AP.init({
+            container:'#player',
+            volume   : 0.7,
+            autoPlay : true,
+            notification: false,
+            playList: [
+                {'icon': iconImage, 'title': 'Try Everything', 'file': 'mp3/try-everything.mp3'},
+                {'icon': iconImage, 'title': 'Let It Go', 'file': 'mp3/let-it-go.mp3'},
+                {'icon': iconImage, 'title': 'fuck', 'file': 'mp3/AMAN ZHU - Моё искусство.mp3'},
+                {'icon': iconImage, 'title': '-а-я-поняла-ты-умственно-отсталыи-да', 'file': 'mp3/19317-а-я-поняла-ты-умственно-отсталыи-да (3).mp3'}, 
+                {'icon': iconImage, 'title': 'es-minus-ehuuu', 'file': 'mp3/es-minus-ehuuu.mp3'},
+                {'icon': iconImage, 'title': '-ot-vinta-bass-bossted.mp3', 'file': 'mp3/-ot-vinta-bass-bossted.mp3'},
+                {'icon': iconImage, 'title': 'shutit-pro-mat-v-godu-klass-tyi-genii.mp3', 'file': 'mp3/shutit-pro-mat-v-godu-klass-tyi-genii.mp3'},
+                {'icon': iconImage, 'title': 'brue.mp3', 'file': 'mp3/brue.mp3'},
+                {'icon': iconImage, 'title': 'otdai-salo.mp3', 'file': 'mp3/otdai-salo.mp3'},
+          ]
+        });
+        
+    </script>
+   
+
+  </body>
+</html>

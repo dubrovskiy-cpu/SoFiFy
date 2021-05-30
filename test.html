@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+       h3 {
+         position: relative;
+         margin-top: 11%;
+        font-size: 200%
+        
+       }
+      h3 {
+    text-shadow:
+      -1px -1px #000,
+      0 1px 0 #444;
+    color: #222;
+    transition: all 1s;
+    text-align: center;
+  }
+  
+  h3:hover {
+    text-shadow:
+      -1px -1px green,
+      0 1px 0 #444;
+    color: #1A1A1A;
+  }
+
+  h5{
+    position: relative;
+      margin-top: -40.8%;
+      text-align: right;
+      z-index: 11;
+  }
+  </style>
+</head>
+
+<button onclick="document.getElementById('id01').style.display='block'">Зарегестрироваться</button>
+
+
+<div id="id01" class="modal">
+
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <button onclick="window.location.href = 'https://vk.com/';">Авторизация через ВКОНТАКТЕ</button>
+      </form>
+      <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись SofiFy.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Введите вашу почту" name="email" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="psw" required>
+
+      <label for="psw-repeat"><b>Повторить пароль</b></label>
+      <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+
+      <p>Создавая учетную запись, вы соглашаетесь с нашим <a href="https://www.spotify.com/ru-ru/legal/privacy-policy/" style="color:dodgerblue">Условия и конфиденциальность</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="signup"><a href="menu.html">Регистарция</a></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+   <h4><img src="maxresdefault (1).jpg"width="70%" height="70%" alt="Письма мастера дзен"></h4>
+
+   <h3>Регистрируйся и слушай новые хиты 2021 </h3>
+   <script>
+
+    var modal = document.getElementById('id01');
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+   
+  
+    </script>
+</body>
+</html>
